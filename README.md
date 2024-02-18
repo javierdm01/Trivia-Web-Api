@@ -1,7 +1,7 @@
 # TRIVIA WEB API PHP
 This application is based on trivia, in the filters you can put the type of questions, how many and many more options.
 
-##Herramientas
+# # Herramientas
   - PHP
   - NetBeans
   - Bootstrap
