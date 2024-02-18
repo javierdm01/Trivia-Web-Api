@@ -16,8 +16,14 @@ class QuestionsService{
                         break;
                 }
                 $link="https://opentdb.com/api.php?amount=".$amount.$category.$difficulty.$type;
-                $trivia = file_get_contents($link);
-                return json_decode($trivia);
+                try {
+                    $trivia = file_get_contents($link);
+                    return json_decode($trivia);
+                } catch (Exception ) {
+                    return '';
+                }
+
+                
         }
     }   
 }
